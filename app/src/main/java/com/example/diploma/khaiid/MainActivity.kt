@@ -16,14 +16,14 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                val intent1 = Intent(this, MainActivity::class.java)
+                startActivity(intent1)
                 return@OnNavigationItemSelectedListener true
             }
 
             R.id.navigation_sign_up -> {
-                val intent = Intent(this, SignUpActivity::class.java)
-                startActivity(intent)
+                val intent2 = Intent(this, SignUpActivity::class.java)
+                startActivity(intent2)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {

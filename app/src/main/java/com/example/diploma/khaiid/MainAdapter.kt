@@ -36,6 +36,12 @@ val card = usersFeed[position]
 
         holder?.view?.textView_user?.text = usertext
         holder?.view?.textView_user_id?.text = card.user_id
+        holder?.view?.textView_born_date?.text = card.born_date
+        holder?.view?.textView_course?.text= card.courses
+        holder?.view?.textView_group?.text= card.group_id
+        holder?.view?.textView_phone?.text= card.contact.phone
+        holder?.view?.textView_email?.text= card.contact.email
+
 
 
     }
