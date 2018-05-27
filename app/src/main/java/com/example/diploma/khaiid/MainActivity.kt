@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
     fun fetchJson() {
         println("Attempting to fetch json")
 
-        val url = "https://my-json-server.typicode.com/blanknamed/api/users"
+        val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
 
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
