@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.user_row.view.*
 
-class MainAdapter(val usersFeed: UsersFeed) : RecyclerView.Adapter<CustomViewHolder>() {
+class MainAdapter(val usersFeed: User) : RecyclerView.Adapter<CustomViewHolder>() {
 
     override fun getItemCount(): Int {
-        return usersFeed.users.count()
-
+        // return usersFeed.users.count()
+        return 1
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): CustomViewHolder {
@@ -20,8 +20,9 @@ class MainAdapter(val usersFeed: UsersFeed) : RecyclerView.Adapter<CustomViewHol
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder?, position: Int) {
-        val card = usersFeed.users.get(position)
-        holder?.view?.textView_user?.text = card.firstName.ru
+//        val card = usersFeed.users.get(position)
+
+        holder?.view?.textView_user?.text = usersFeed.firstName.ru
 
     }
 }

@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     fun fetchJson() {
         println("Attempting to fetch json")
 
+//        val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
         val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
 
         val request = Request.Builder().url(url).build()
@@ -61,8 +62,8 @@ class MainActivity : AppCompatActivity() {
 
                 val gson = GsonBuilder().create()
 
-//                val usersFeed = gson.fromJson(body, Array<User>::class.java)
-                val usersFeed = gson.fromJson(body, UsersFeed::class.java)
+                val usersFeed = gson.fromJson(body, User::class.java)
+//                val usersFeed = gson.fromJson(body, UsersFeed::class.java)
 
 
                 runOnUiThread {
@@ -79,4 +80,4 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-class UsersFeed(val users: List<User>)
+//class UsersFeed(val users: Array<User>)

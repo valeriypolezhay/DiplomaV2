@@ -1,7 +1,7 @@
 package com.example.diploma.khaiid
 
 data class User(
-        val user_id: Int,
+        val user_id: String,
         val firstName: firstName,
         val middleName: middleName,
         val lastName: lastName,
@@ -15,8 +15,8 @@ data class User(
         val doc_id: String,
         val book_id: String,
         val dept: String,
-        val level: Int,
-        val type: Int)
+        val level: String,
+        val type: String)
 
 data class firstName(
         val ru: String,
