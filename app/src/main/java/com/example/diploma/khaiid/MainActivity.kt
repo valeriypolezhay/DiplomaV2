@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
                 val gson = GsonBuilder().create()
 
-                val usersFeed = gson.fromJson(body, User::class.java)
+                val usersFeed = gson.fromJson(body, Array<User>::class.java)
 //                val usersFeed = gson.fromJson(body, UsersFeed::class.java)
 
 
