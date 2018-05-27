@@ -33,10 +33,12 @@ data class lastName(
         val ua: String,
         val en: String)
 
+data class links(
+        val site: String
+)
+
 data class contact(
         val phone: String,
         val email: String)
 
-data class links(
-        val site: String
-)
+
