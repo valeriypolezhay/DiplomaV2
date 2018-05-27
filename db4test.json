@@ -1,0 +1,37 @@
+{
+  "users": {
+    "user_id": "01",
+    "firstName": {
+      "ru": "Нейм",
+      "ua": "Нейм",
+      "en": "Name"
+    },
+    "middleName": {
+      "ru": "Неймович",
+      "ua": "Неймович",
+      "en": "Nameovich"
+    },
+    "lastName": {
+      "ru": "Неймов",
+      "ua": "Неймов",
+      "en": "Namov"
+    },
+    "courses": " test",
+    "docs": "test",
+    "born_date": "01-01-1970",
+    "contact": {
+      "phone": "+380951234567",
+      "email": "example@gmail.com"
+    },
+    "links": {
+      "site": "www.example.com"
+    },
+    "student_id": "01student",
+    "group_id": "01group",
+    "doc_id": "01doc",
+    "book_id": "01book",
+    "dept": "504",
+    "level": "0",
+    "type": "1"
+  }
+}

@@ -22,7 +22,15 @@ class MainAdapter(val usersFeed: User) : RecyclerView.Adapter<CustomViewHolder>(
     override fun onBindViewHolder(holder: CustomViewHolder?, position: Int) {
 //        val card = usersFeed.users.get(position)
 
-        holder?.view?.textView_user?.text = usersFeed.firstName.ru
+        var space = " "
+        var enter = "\n"
+        var usertext =usersFeed.firstName.ua + space + usersFeed.middleName.ua+space+usersFeed.lastName.ua+enter+
+                usersFeed.firstName.ru + space + usersFeed.middleName.ru+space+usersFeed.lastName.ru+enter+
+                usersFeed.firstName.en + space + usersFeed.middleName.en+space+usersFeed.lastName.en+enter
+
+        holder?.view?.textView_user?.text = usertext
+        holder?.view?.textView_user_id?.text = usersFeed.user_id
+
 
     }
 }

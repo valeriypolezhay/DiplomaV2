@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
     fun fetchJson() {
         println("Attempting to fetch json")
 
-//        val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
         val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
 
         val request = Request.Builder().url(url).build()
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         client.newCall(request).enqueue(object : Callback {
 
             override fun onResponse(call: Call?, response: Response?) {
-                val body = response?.body()?.toString()
+                val body = response?.body()?.string()
                 println(body)
 
                 val gson = GsonBuilder().create()
