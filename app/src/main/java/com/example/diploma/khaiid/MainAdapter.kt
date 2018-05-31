@@ -9,8 +9,7 @@ import kotlinx.android.synthetic.main.user_row.view.*
 class MainAdapter(val usersFeed: Array<User>) : RecyclerView.Adapter<CustomViewHolder>() {
 
     override fun getItemCount(): Int {
-        // return usersFeed.users.count()
-       return usersFeed.size
+        return usersFeed.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): CustomViewHolder {
@@ -20,30 +19,22 @@ class MainAdapter(val usersFeed: Array<User>) : RecyclerView.Adapter<CustomViewH
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder?, position: Int) {
-        //val card = usersFeed.users.get(position)
-val card = usersFeed[position]
+
+        val card = usersFeed[position]
         val space = " "
         val enter = "\n"
 
-//        val usertext =usersFeed.firstName.ua + space + usersFeed.middleName.ua+space+usersFeed.lastName.ua+enter+
-//                usersFeed.firstName.ru + space + usersFeed.middleName.ru+space+usersFeed.lastName.ru+enter+
-//                usersFeed.firstName.en + space + usersFeed.middleName.en+space+usersFeed.lastName.en+enter
-
-        val usertext =card.firstName.ua + space + card.middleName.ua+space+card.lastName.ua+enter+
-                card.firstName.ru + space + card.middleName.ru+space+card.lastName.ru+enter+
-                card.firstName.en + space + card.middleName.en+space+card.lastName.en+enter
-
+        val usertext = card.firstName.ua + space + card.middleName.ua + space + card.lastName.ua + enter +
+                card.firstName.ru + space + card.middleName.ru + space + card.lastName.ru + enter +
+                card.firstName.en + space + card.middleName.en + space + card.lastName.en + enter
 
         holder?.view?.textView_user?.text = usertext
         holder?.view?.textView_user_id?.text = card.user_id
         holder?.view?.textView_born_date?.text = card.born_date
-        holder?.view?.textView_course?.text= card.courses
-        holder?.view?.textView_group?.text= card.group_id
-        holder?.view?.textView_phone?.text= card.contact.phone
-        holder?.view?.textView_email?.text= card.contact.email
-
-
-
+        holder?.view?.textView_course?.text = card.courses
+        holder?.view?.textView_group?.text = card.group_id
+        holder?.view?.textView_phone?.text = card.contact.phone
+        holder?.view?.textView_email?.text = card.contact.email
     }
 }
 

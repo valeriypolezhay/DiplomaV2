@@ -1,12 +1,16 @@
 package com.example.diploma.khaiid
 
+import android.app.Fragment
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+//import com.example.diploma.khaiid.R.id.recyclerView_main
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.users_recycler.recyclerView_main
 import okhttp3.*
 import java.io.IOException
 
@@ -22,14 +26,18 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.navigation_sign_up -> {
-                val intent2 = Intent(this, SignUpStudentActivity::class.java)
-                startActivity(intent2)
+//                val intent2 = Intent(this, SignUpMenuActivity::class.java)
+//                startActivity(intent2)
+                changeFragment(Fragment())
+
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_settings -> {
+
+
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -40,11 +48,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        changeFragment(Fragment())
+
         recyclerView_main.layoutManager = LinearLayoutManager(this)
         fetchJson()
 
     }
 
+    private fun changeFragment(newFragment:Fragment){
+        val ft=fragmentManager.beginTransaction()
+        ft.replace(R.id.fragments, newFragment)
+        ft.commit()
+    }
 
     fun fetchJson() {
         println("Attempting to fetch json")
@@ -60,14 +76,10 @@ class MainActivity : AppCompatActivity() {
                 println(body)
 
                 val gson = GsonBuilder().create()
-
                 val usersFeed = gson.fromJson(body, Array<User>::class.java)
-//                val usersFeed = gson.fromJson(body, UsersFeed::class.java)
-
 
                 runOnUiThread {
                     recyclerView_main.adapter = MainAdapter(usersFeed)
-//                    recyclerView_main.adapter = MainAdapter(users)
                 }
             }
 
@@ -78,5 +90,3 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
-
-//class UsersFeed(val users: Array<User>)

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.diploma.khaiid">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,19 +25,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SignUpMenuActivity"
+            android:label="Sign up menu"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SignUpStudentActivity"
             android:label="@string/sign_up"
             android:screenOrientation="portrait" />
 
-        <!--<activity-->
-            <!--android:name=".SignUpTeacherActivity"-->
-            <!--android:label="@string/teacher"-->
-            <!--android:screenOrientation="portrait" />-->
-        <!--<activity-->
-            <!--android:name=".SignUpCourseActivity"-->
-            <!--android:label="@string/new_course"-->
-            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".SignUpTeacherActivity"
+            android:label="@string/new_teacher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpCourseActivity"
+            android:label="@string/new_course"
+            android:screenOrientation="portrait" />
 
 
     </application>

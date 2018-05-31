@@ -10,11 +10,11 @@ import android.app.DatePickerDialog
 import android.widget.EditText
 import android.widget.Toast
 import java.text.SimpleDateFormat
-import kotlinx.android.synthetic.main.sign_up_activity.*
+import kotlinx.android.synthetic.main.sign_up_student_activity.*
 
 
 
-class SignUpActivity : AppCompatActivity() {
+class SignUpCourseActivity : AppCompatActivity() {
 
     private var buttonDate: Button? = null
     var textviewDate: TextView? = null
@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.sign_up_activity)
+        setContentView(R.layout.sign_up_student_activity)
 
         // get the references from layout file
         textviewDate = this.text_view_date_1
@@ -43,7 +43,7 @@ class SignUpActivity : AppCompatActivity() {
 
         // when you click on the button, show DatePickerDialog that is set with OnDateSetListener
         buttonDate!!.setOnClickListener {
-            DatePickerDialog(this@SignUpActivity,
+            DatePickerDialog(this@SignUpCourseActivity,
                     dateSetListener,
                     // set DatePickerDialog to point to today's date when it loads up
                     cal.get(Calendar.YEAR),
@@ -51,19 +51,19 @@ class SignUpActivity : AppCompatActivity() {
                     cal.get(Calendar.DAY_OF_MONTH)).show()
         }
 
-        val edit: EditText =editText
-        val edit2: EditText =editText2
-        val edit3: EditText =editText3
-        val edit4: EditText =editText4
-        val edit5: EditText =editText5
-        val edit6: EditText =editText6
-        val edit7: EditText =editText7
-        val edit8: EditText =editText8
-        val edit9: EditText =editText9
-        val edit10: EditText =editText10
-        val edit11: EditText =editText11
-        val edit12: EditText =editText12
-        val birthDate: TextView=text_view_date_1
+//        val edit: EditText =editText
+//        val edit2: EditText =editText2
+//        val edit3: EditText =editText3
+//        val edit4: EditText =editText4
+//        val edit5: EditText =editText5
+//        val edit6: EditText =editText6
+//        val edit7: EditText =editText7
+//        val edit8: EditText =editText8
+//        val edit9: EditText =editText9
+//        val edit10: EditText =editText10
+//        val edit11: EditText =editText11
+//        val edit12: EditText =editText12
+//        val birthDate: TextView=text_view_date_1
 
 
 //        val user0= User(edit.toString(),edit2.toString(),edit3.toString(),edit4.toString(),edit5.toString(),edit6.toString(),
@@ -80,7 +80,7 @@ class SignUpActivity : AppCompatActivity() {
 //            val person = user0
 //            val jsonPerson: String = gson.toJson(person)
 
-            Toast.makeText(this@SignUpActivity, "Almost done!",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@SignUpCourseActivity, "Almost done!",Toast.LENGTH_SHORT).show()
         }
 
 
