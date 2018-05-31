@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/new_student"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/first_name_ENG"
+
+                android:inputType="textPersonName"
+                android:labelFor="@+id/editText" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/second_name_ENG"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/middle_name_ENG"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText3" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/first_name_UKR"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText4" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/second_name_UKR"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText5" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/middle_name_UKR"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText6" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/first_name_RUS"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText7" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/second_name_RUS"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText8" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/middle_name_RUS"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText9" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/group_number"
+                android:inputType="textPersonName"
+                android:labelFor="@id/editText10" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:labelFor="@id/editText11" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:labelFor="@id/editText12" />
+
+            <TextView
+                android:id="@+id/text_view_date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:paddingBottom="8dp"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button_date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/change_date"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+
+
+
+</ScrollView>

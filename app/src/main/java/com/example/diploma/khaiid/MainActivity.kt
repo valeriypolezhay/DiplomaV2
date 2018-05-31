@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.navigation_sign_up -> {
-                val intent2 = Intent(this, SignUpActivity::class.java)
+                val intent2 = Intent(this, SignUpStudentActivity::class.java)
                 startActivity(intent2)
                 return@OnNavigationItemSelectedListener true
             }

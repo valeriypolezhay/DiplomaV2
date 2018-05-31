@@ -26,17 +26,18 @@
 
 
     <string name="sign_up">Sign Up</string>
-    <string name="new_user">New user</string>
+
     <string name="change_date">Change Date</string>
     <string name="textexample">TextExample</string>
 
-    <string name="new_course">New course</string>
+
     <string name="course_name_ENG">Course name</string>
     <string name="course_name_UKR">Назва курсу</string>
     <string name="course_name_RUS">Название курса</string>
-    <string name="teacher">Teacher</string>
-    <string name="new_teacher">New teacher</string>
 
-    <string name="registration">Registration</string>
+    <string name="new_course">New course</string>
+    <string name="new_teacher">New teacher</string>
+    <string name="new_student">New student</string>
+
 
 </resources>
