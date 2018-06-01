@@ -1,16 +1,13 @@
 package com.example.diploma.khaiid
 
 import android.app.Fragment
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.example.diploma.khaiid.Fragments.RecyclerFragment
-//import com.example.diploma.khaiid.R.id.recyclerView_main
+import com.example.diploma.khaiid.Fragments.SignUpMenuFragment
 import com.google.gson.GsonBuilder
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.users_recycler.recyclerView_main
 import okhttp3.*
 import java.io.IOException
@@ -21,15 +18,16 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                val intent1 = Intent(this, MainActivity::class.java)
-                startActivity(intent1)
+//                val intent1 = Intent(this, MainActivity::class.java)
+//                startActivity(intent1)
+                changeFragment(RecyclerFragment())
                 return@OnNavigationItemSelectedListener true
             }
 
             R.id.navigation_sign_up -> {
 //                val intent2 = Intent(this, SignUpMenuActivity::class.java)
 //                startActivity(intent2)
-                changeFragment(Fragment())
+                changeFragment(SignUpMenuFragment())
 
                 return@OnNavigationItemSelectedListener true
             }
@@ -37,8 +35,6 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_settings -> {
-
-
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -61,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         ft.commit()
     }
 
-    fun fetchJson() {
+    private fun fetchJson() {
         println("Attempting to fetch json")
 
         val url = "https://my-json-server.typicode.com/valeriypolezhay/DiplomaV2/users"
