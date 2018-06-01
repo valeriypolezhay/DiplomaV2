@@ -1,4 +1,4 @@
-package com.example.diploma.khaiid
+package com.example.diploma.khaiid.SignUp
 
 import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
@@ -7,8 +7,8 @@ import android.widget.TextView
 import android.widget.Button
 import java.util.*
 import android.app.DatePickerDialog
-import android.widget.EditText
 import android.widget.Toast
+import com.example.diploma.khaiid.R
 import java.text.SimpleDateFormat
 import kotlinx.android.synthetic.main.sign_up_student_activity.*
 

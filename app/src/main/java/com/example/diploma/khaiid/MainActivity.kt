@@ -49,11 +49,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        changeFragment(Fragment())
+
 
         recyclerView_main.layoutManager = LinearLayoutManager(this)
         fetchJson()
 
+        changeFragment(Fragment())
     }
 
     private fun changeFragment(newFragment:Fragment){

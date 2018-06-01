@@ -1,11 +1,10 @@
-package com.example.diploma.khaiid
+package com.example.diploma.khaiid.SignUp
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import com.example.diploma.khaiid.R.id.*
-
+import com.example.diploma.khaiid.R
 
 
 class SignUpMenuActivity : AppCompatActivity() {
