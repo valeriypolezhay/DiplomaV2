@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import com.example.diploma.khaiid.Fragments.RecyclerFragment
-import com.example.diploma.khaiid.Fragments.SignUpMenuFragment
+import com.example.diploma.khaiid.fragments.RecyclerFragment
+import com.example.diploma.khaiid.fragments.SignUpMenuFragment
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.users_recycler.recyclerView_main
 import okhttp3.*
@@ -45,11 +45,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView_main.layoutManager = LinearLayoutManager(this)
-        fetchJson()
-
         changeFragment(RecyclerFragment())
+
+        recyclerView_main.layoutManager = LinearLayoutManager(this)
+
+
+        fetchJson()
     }
+
+
 
     private fun changeFragment(newFragment:Fragment){
         val ft=fragmentManager.beginTransaction()

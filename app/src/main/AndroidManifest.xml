@@ -27,20 +27,20 @@
         </activity>
 
         <activity
-            android:name=".SignUp.SignUpMenuActivity"
+            android:name=".signUp.SignUpMenuActivity"
             android:label="Sign up menu"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignUp.SignUpStudentActivity"
+            android:name=".signUp.SignUpStudentActivity"
             android:label="@string/sign_up"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".SignUp.SignUpTeacherActivity"
+            android:name=".signUp.SignUpTeacherActivity"
             android:label="@string/new_teacher"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignUp.SignUpCourseActivity"
+            android:name=".signUp.SignUpCourseActivity"
             android:label="@string/new_course"
             android:screenOrientation="portrait" />
 

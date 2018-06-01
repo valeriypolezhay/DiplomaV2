@@ -1,4 +1,4 @@
-package com.example.diploma.khaiid.Fragments
+package com.example.diploma.khaiid.fragments
 
 import android.os.Bundle
 import android.app.Fragment

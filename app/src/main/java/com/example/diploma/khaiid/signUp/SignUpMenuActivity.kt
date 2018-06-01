@@ -1,4 +1,4 @@
-package com.example.diploma.khaiid.SignUp
+package com.example.diploma.khaiid.signUp
 
 import android.content.Intent
 import android.os.Bundle
