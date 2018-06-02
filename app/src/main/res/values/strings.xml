@@ -38,6 +38,7 @@
     <string name="new_course">New course</string>
     <string name="new_teacher">New teacher</string>
     <string name="new_student">New student</string>
+    <string name="search">Search</string>
 
 
 </resources>

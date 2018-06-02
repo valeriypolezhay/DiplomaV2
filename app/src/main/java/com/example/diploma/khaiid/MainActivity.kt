@@ -2,9 +2,11 @@ package com.example.diploma.khaiid
 
 import android.app.Fragment
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import com.example.diploma.khaiid.fragments.RecyclerFragment
 import com.example.diploma.khaiid.fragments.SignUpMenuFragment
 import com.google.gson.GsonBuilder
@@ -45,18 +47,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        changeFragment(RecyclerFragment())
 
+        //val recyclerView_main:RecyclerView=findViewById(R.id.recyclerView_main)
         recyclerView_main.layoutManager = LinearLayoutManager(this)
 
 
         fetchJson()
+
+        changeFragment(RecyclerFragment())
     }
 
 
-
-    private fun changeFragment(newFragment:Fragment){
-        val ft=fragmentManager.beginTransaction()
+    private fun changeFragment(newFragment: Fragment) {
+        val ft = fragmentManager.beginTransaction()
         ft.replace(R.id.fragments, newFragment)
         ft.commit()
     }

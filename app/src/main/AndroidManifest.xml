@@ -43,8 +43,10 @@
             android:name=".signUp.SignUpCourseActivity"
             android:label="@string/new_course"
             android:screenOrientation="portrait" />
-
-
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/search"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
