@@ -61,7 +61,7 @@
         "ua": "Іванов",
         "en": "Ivanov"
       },
-      "courses": " test",
+      "courses": " 2nd course",
       "docs": "test",
       "born_date": "01-01-1999",
       "contact": {
@@ -96,7 +96,7 @@
         "ua": "Клімов",
         "en": "Klimov"
       },
-      "courses": " test",
+      "courses": "2nd course",
       "docs": "test",
       "born_date": "03-06-1999",
       "contact": {
@@ -131,7 +131,7 @@
         "ua": "Шилов",
         "en": "Shilov"
       },
-      "courses": " test",
+      "courses": "2nd course",
       "docs": "test",
       "born_date": "23-05-1999",
       "contact": {
