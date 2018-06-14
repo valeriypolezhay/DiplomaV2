@@ -47,32 +47,32 @@
     {
       "user_id": "01",
       "firstName": {
-        "ru": "Нейм",
-        "ua": "Нейм",
-        "en": "Name"
+        "ru": "Nazar",
+        "ua": "Назар",
+        "en": "Назар"
       },
       "middleName": {
-        "ru": "Неймович",
-        "ua": "Неймович",
-        "en": "Nameovich"
+        "ru": "Олегович",
+        "ua": "Олегович",
+        "en": "Олегович"
       },
       "lastName": {
-        "ru": "Неймов",
-        "ua": "Неймов",
-        "en": "Namov"
+        "ru": "Иванов",
+        "ua": "Іванов",
+        "en": "Ivanov"
       },
       "courses": " test",
       "docs": "test",
-      "born_date": "01-01-1970",
+      "born_date": "01-01-1999",
       "contact": {
         "phone": "+380951234567",
-        "email": "example@gmail.com"
+        "email": "ivanmail@gmail.com"
       },
       "links": {
         "site": "www.example.com"
       },
       "student_id": "01student",
-      "group_id": "01group",
+      "group_id": "540f",
       "doc_id": "01doc",
       "book_id": "01book",
       "dept": "504",
@@ -82,32 +82,32 @@
     {
       "user_id": "02",
       "firstName": {
-        "ru": "Нейм2",
-        "ua": "Нейм2",
-        "en": "Name2"
+        "ru": "Сергей",
+        "ua": "Сергій",
+        "en": "Sergiy"
       },
       "middleName": {
-        "ru": "Неймович2",
-        "ua": "Неймович2",
-        "en": "Nameovich2"
+        "ru": "Иванович",
+        "ua": "Іванович",
+        "en": "Ivanovich"
       },
       "lastName": {
-        "ru": "Неймов2",
-        "ua": "Неймов2",
-        "en": "Namov2"
+        "ru": "Климов",
+        "ua": "Клімов",
+        "en": "Klimov"
       },
       "courses": " test",
       "docs": "test",
-      "born_date": "01-01-1970",
+      "born_date": "03-06-1999",
       "contact": {
-        "phone": "+380951234567",
-        "email": "example@gmail.com"
+        "phone": "+380541235567",
+        "email": "mailnt@gmail.com"
       },
       "links": {
         "site": "www.example.com"
       },
       "student_id": "02student",
-      "group_id": "02group",
+      "group_id": "540f",
       "doc_id": "02doc",
       "book_id": "02book",
       "dept": "504",
@@ -117,69 +117,34 @@
     {
       "user_id": "03",
       "firstName": {
-        "ru": "Нейм3",
-        "ua": "Нейм3",
-        "en": "Name3"
+        "ru": "Богдан",
+        "ua": "Богдан",
+        "en": "Bogdan"
       },
       "middleName": {
-        "ru": "Неймович3",
-        "ua": "Неймович3",
-        "en": "Nameovich3"
+        "ru": "Петрович",
+        "ua": "Петрович",
+        "en": "Petrovich"
       },
       "lastName": {
-        "ru": "Неймов3",
-        "ua": "Неймов3",
-        "en": "Namov3"
+        "ru": "Шилов",
+        "ua": "Шилов",
+        "en": "Shilov"
       },
       "courses": " test",
       "docs": "test",
-      "born_date": "01-01-1970",
+      "born_date": "23-05-1999",
       "contact": {
-        "phone": "+380951234567",
-        "email": "example@gmail.com"
+        "phone": "+380951237567",
+        "email": "petrovich@gmail.com"
       },
       "links": {
         "site": "www.example.com"
       },
       "student_id": "01student",
-      "group_id": "01group",
+      "group_id": "540f",
       "doc_id": "01doc",
       "book_id": "01book",
-      "dept": "504",
-      "level": "0",
-      "type": "1"
-    },
-    {
-      "user_id": "04",
-      "firstName": {
-        "ru": "Нейм4",
-        "ua": "Нейм4",
-        "en": "Name4"
-      },
-      "middleName": {
-        "ru": "Неймович4",
-        "ua": "Неймович4",
-        "en": "Nameovich4"
-      },
-      "lastName": {
-        "ru": "Неймов4",
-        "ua": "Неймов4",
-        "en": "Namov4"
-      },
-      "courses": " test",
-      "docs": "test",
-      "born_date": "01-01-1970",
-      "contact": {
-        "phone": "+380951234567",
-        "email": "example@gmail.com"
-      },
-      "links": {
-        "site": "www.example.com"
-      },
-      "student_id": "04student",
-      "group_id": "04group",
-      "doc_id": "04doc",
-      "book_id": "04book",
       "dept": "504",
       "level": "0",
       "type": "1"
